@@ -1,0 +1,96 @@
+/* Desktop Device */
+@media only screen and (max-width: 1200px) {
+  .sidebar{
+    width: 70px;
+  }
+  .sidebar .sidebar-brand h1 span:last-child,
+  .sidebar .sidebar-menu li span:last-child{
+    display: none;
+  }
+  .sidebar:hover{
+    width: 345px;
+    z-index: 200;
+  }
+  .sidebar:hover .sidebar-brand h1 span:last-child,
+  .sidebar:hover .sidebar-menu li span:last-child{
+    display: inline;
+  }
+  .main-content{
+    margin-left: 70px;
+  }
+  .main-content header{
+    width: calc(100% - 70px);
+    left: 70px;
+  }
+}
+/* Desktop Device small */
+@media only screen and (max-width: 960px){
+  .cards{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .recent-content{
+    grid-template-columns: 56% 40%;
+  }
+}
+/* Tablat Device */
+@media only screen and (max-width: 768px){
+  .sidebar{
+    left: -100px;
+  }
+  #nav-toggle:checked + .sidebar{
+    left: 0 !important;
+    z-index: 100;
+    width: 345px;
+  }
+  #nav-toggle:checked + .sidebar .sidebar-brand h1 span:last-child,
+  #nav-toggle:checked + .sidebar .sidebar-menu li span:last-child{
+    display: inline;
+  }
+  #nav-toggle:checked ~ .main-content{
+    margin-left: 0rem !important;
+  }
+  .main-content{
+    width: 100% ;
+    margin-left: 0rem ;
+  }
+  header{
+    width: 100% !important;
+    left: 0 !important;
+  }
+  header h2{
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+  header h2 label{
+    background: var(--main-color);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 1rem;
+  }
+  header h2 span{
+    text-align: center;
+    padding-right: 0rem;
+  }
+  .cards{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .recent-content{
+    grid-template-columns: 100%;
+  }
+  .search-wrapper{
+    display: none;
+  }
+}
+/* Mobile Device */
+@media only screen and (max-width: 576px){
+  .cards{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
