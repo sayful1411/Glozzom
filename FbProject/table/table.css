@@ -1,0 +1,31 @@
+.study{
+    margin: 50px auto;
+    border-collapse: collapse;
+    font-size: 15px;
+    min-width: 450px;
+    /*border-radius: 15px 15px 0 0;*/
+    overflow: hidden;
+    box-shadow: 0 0 10px;
+}
+.study thead tr{
+    background-color: #009879;
+    color: #ffffff;
+}
+.study th, td{
+    padding: 15px 21px;
+    text-align: center;
+}
+.study tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+.study tbody tr:nth-of-type(even){
+    background: #f3f3f3;
+}
+.study tbody tr:last-of-type{
+    border-bottom: 2px solid #009879;
+}
+.study caption{
+    color: #1840d2;
+    font-size: 35px;
+
+}
